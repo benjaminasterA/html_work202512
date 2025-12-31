@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 🔍 [탐색] [Search] (서치) All anchor elements selecting */
+        a {
+            /* 🎨 [설정] [Setting] (세팅) Initial link color blue defining */
+            color: blue;
+            /* ➖ [제거] [Remove] (리무브) Default underline removing */
+            text-decoration: none;
+        }
+        /* ⬆️ [이전] [Previous] (프리비어스) Visited URL state styling */
+        a:visited {
+            color: skyblue;
+            text-decoration: underline;
+        }
+        /* 👀 [확인] [View] (뷰) Mouse cursor hovering interaction rendering */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        /* 👇 [입력 대기] [Input Wait] (인풋 웨이트) Active clicking state */
+        /* UI feedback implementing */
+        a:active {
+            color: orange;
+            /* 🔧 [조정] [Adjust] (어저스트) Visual border for focus indicating */
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+<body>
+<div id="top">
+    <h1>범준샘 AI 아카데미</h1>
+    <ul>
+        <li><a href="ch03ex03sub.html#home" target="aaa">Home</a></li>
+        <li><a href="ch03ex03sub.html#profile" target="aaa">Profile</a></li>
+        <li><a href="ch03ex03sub.html#gallery" target="aaa">Gallery</a></li>
+    </ul>
+</div>
+<iframe name="aaa" 
+        src="ch03ex03sub.html" 
+        width="100%" 
+        height="600" 
+        frameborder="0"></iframe>
+
+</body>
+</html>
